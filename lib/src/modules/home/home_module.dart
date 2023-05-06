@@ -29,6 +29,7 @@ class HomeModule extends Module {
 
         //!O bind é difernte do lazy porque, o lazy só starta ele quando entramos no modulo dele(ou seja no PessoaRepositoryImpl)
         //!ja esse bind abaixo ele ao startar o projeto ele ja entra nesse PessoaRepositoryImpl sem eu clicar nesse modulo
+        //!é bom pra classes que demoram pra carrega as coisas
         //Bind.singleton<IPessoaRepository>((i) => PessoaRepositoryImpl()),
 
         //!o bind abaixo vai adicioanr a instancia para adicionar diretamente (ou seja toda vez que eu acessa essa instancia ele pega uma instancia ja existente ou seja não é singleton)
